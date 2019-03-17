@@ -9,7 +9,7 @@ provider:
         Action:
           - dynamodb:PutItem
           - dynamodb:GetItem
-        Resource: "arn:aws:dynamodb:eu-central-1:665466489176:table/todos"
+        Resource: "arn:aws:dynamodb:eu-central-1:${opt:userid}:table/todos"
 
 functions:
   createTodo:
